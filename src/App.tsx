@@ -66,7 +66,7 @@ class App extends React.Component<AppProps, AppState> {
                                 // simulates loading a file from the server
                                 console.log('Load method called')
                                 console.log(source)
-                                // fetch(source).then(res => res.blob()).then(load);
+                                fetch(source).then(res => res.blob()).then(load);
                             }
                         }}
                         oninit={() => this.handleInit() }
