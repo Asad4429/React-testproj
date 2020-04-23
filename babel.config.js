@@ -7,7 +7,7 @@ module.exports = api => {
         [
           '@babel/preset-react',
           {
-            development: process.env.NODE_ENV !== 'production',
+            development: true,
           },
         ],
         [

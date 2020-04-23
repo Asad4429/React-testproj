@@ -35,7 +35,7 @@ class App extends React.Component<AppProps, AppState> {
         // Set initial files, type 'local' means this is a file
         // that has already been uploaded to the server (see docs)
         files: [{
-            source: 'https://dummyserver/photo-of-red-rose.jpg',
+            source: '../public/photo.jpeg',
             options: {
                 type: 'local'
             }
@@ -64,9 +64,9 @@ class App extends React.Component<AppProps, AppState> {
                             },
                             load: (source, load) => {
                                 // simulates loading a file from the server
-                                console.log('Log method called')
+                                console.log('Load method called')
                                 console.log(source)
-                                fetch(source).then(res => res.blob()).then(load);
+                                // fetch(source).then(res => res.blob()).then(load);
                             }
                         }}
                         oninit={() => this.handleInit() }
