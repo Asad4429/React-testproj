@@ -1,0 +1,28 @@
+{
+  "exclude": [
+    "node_modules",
+  ],
+  "include": [
+    "src/**/*.tsx",
+    "src/**/*.ts"
+  ],
+  "compilerOptions": {
+    "checkJs": true,
+    "allowJs": true,
+    "target": "esnext",
+    "module": "esnext",
+    "jsx": "react",
+    "moduleResolution": "node",
+    "allowSyntheticDefaultImports": true,
+    "sourceMap": true,
+    "noEmit": true,
+    "pretty": true,
+    "skipLibCheck": true,
+    "noImplicitAny": false,
+    "baseUrl": "./",
+    "strict": false,
+    "resolveJsonModule": true,
+    "paths": {
+    }
+  }
+}
